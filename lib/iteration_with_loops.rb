@@ -2,7 +2,7 @@ def join_nested_strings(src)
   row_count = 0 
   while row_count < src.length do
     column_count = 0 
-    sentence = ""
+    sentence = []
     while column_count < src[row_count].length do 
       if src[row_count][column_count] == src[row_count][column_count].to_s
         sentence.push(src[row_count][column_count])
@@ -11,4 +11,5 @@ def join_nested_strings(src)
     end
     row_count += 1 
   end
+  sentence.join
 end
