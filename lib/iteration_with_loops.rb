@@ -5,7 +5,8 @@ def join_nested_strings(src)
     sentence = ""
     while column_count < src[row_count].length do 
       if type(src[row_count][column_count]) == String
-        sentence.push()
+        sentence.push(src[row_count][column_count])
+      end
       column_count += 1
     end
     row_count += 1 
