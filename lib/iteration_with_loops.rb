@@ -1,6 +1,6 @@
 def join_nested_strings(src)
   row_count = 0 
-  
+  sentence = []
   while row_count < src.length do
     column_count = 0 
     while column_count < src[row_count].length do 
